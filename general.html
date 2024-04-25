@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>入会案内</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css">
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+        :root {
+            --border-color: #fbad36;
+            /*色*/
+            --arcsize: 150px;
+            /*直径*/
+            --border-width: 4px;
+            /*線の太さ*/
+        }
+
+        .waku {
+            border: var(--border-width) solid var(--border-color);
+            padding: 5% 10%;
+            border-radius: 5px;
+            position: relative;
+            margin-top: 120px;
+            background-color: white;
+            text-align: center;
+            margin-left: 4%;
+            margin-right: 4%;
+        }
+
+        .waku p {
+            padding-top: 1rem;
+            color: #2b2b2b
+        }
+
+        .waku::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: calc(var(--arcsize) / 2 * -1);
+            transform: translatex(-50%);
+            width: var(--arcsize);
+            height: calc(var(--arcsize) / 2);
+            border-left: var(--border-width) solid var(--border-color);
+            border-top: var(--border-width) solid var(--border-color);
+            border-right: var(--border-width) solid var(--border-color);
+            border-radius: calc(var(--arcsize) / 2) calc(var(--arcsize) / 2) 0 0;
+            background-color: white;
+
+        }
+
+        .waku::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: calc(var(--arcsize) / 4 * -1 - 10px);
+            transform: translatex(-50%);
+            width: var(--arcsize);
+            height: calc(var(--arcsize) / 2);
+            background-image: url(images/general_logo.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gradient">
+        <!-- *********header(共通)*************** -->
+        <header>
+            <div class="headerWrapper">
+                <div class="headerWrap">
+                    <a href="index.html">
+                        <h1>リカレント柔道整復師連合会</h1>
+                    </a>
+                    <!-- ハンバーガーメニュー -->
+                    <input id="open" type="checkbox">
+                    <label class="toggle" for="open">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <div id="menu"> <!-- 横並び -->
+                        <nav>
+                            <ul>
+                                <li><a href="greet.html" class="menuText">連合会について</a></li>
+                                <li> <a href="company.html" class="menuText">指定業者申込</a> </li>
+                                <li> <a href="general.html" class="menuText">入会案内</a> </li>
+                                <li> <a href="qa.html" class="menuText">よくある質問</a></li>
+                                <li> <a href="https://www.facebook.com/hyogokenjyusei/?ref=embed_page"
+                                        class="menuText">お知らせ</a></li>
+                                <li class="menu_tel">
+                                    <div class="humMenuButton"><a href="#">012-345-6789</a></div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div><!-- menu -->
+                    <!-- PCグローバルメニュー -->
+                    <div class="headerList">
+                        <nav>
+                            <ul>
+                                <li><a href="greet.html">連合会について</a></li>
+                                <li> <a href="company.html">指定業者申込</a> </li>
+                                <li> <a href="general.html">入会案内</a> </li>
+                                <li> <a href="qa.html">よくある質問</a></li>
+                                <li> <a href="https://www.facebook.com/hyogokenjyusei/?ref=embed_page">お知らせ</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- *********header(共通)*************** -->
+
+        <div class="genMidashi">
+        </div>
+
+        <div class="genMidashiP">
+            <h2>入会案内</h2>
+            <h3>enrollment guidance</h3>
+        </div>
+
+        <div class="mainContentGeneral">
+            <!-- ここにメインコンテンツを書く -->
+
+            <div class="negBox">
+                <p class="negaQuestion">全国で毎年たくさんの整骨院や鍼灸院が開業されていますが、<br><br>98％の店舗が廃業しているのをご存知ですか？</p>
+                <div class="negItem">
+                    <img src="images/Gakkuri.png" alt="うなだれるイメージ">
+
+                    <p>その原因は…
+                        <br><br>・資金が集まらない、融資先が見つからない
+                        <br><br>・宣伝や広報がうまくいかない
+                        <br><br>・経営に対する知識が足りない …など
+                    </p>
+                </div>
+            </div><!-- negBox -->
+
+            <!-- <div class="genSpo">
+                <img src="images/genSpoIMG.png" alt="図解">
+            </div> -->
+
+
+            <div class="waku">
+                <p>開業、経営に必要な資金・広報・知識面のサポートはもちろん
+                    <br><br>保険・レセプト選びや各業者の紹介まで組合がお助けします。
+                </p>
+            </div>
+
+            <div class="meritBox">
+                <h3>メリット</h3>
+                <div class="meritWrap">
+                    <div class="meritItem">
+                        <img src="images/meritItem01.png" alt="保険・レセプト書類">
+                        <h4>保険・レセプト選びをサポート</h4>
+                        <p id="meritP"><br>難しい書類仕事の代行や効率化のサポートにより施術に集中できる環境を整えます</p>
+                    </div><!-- meritItem -->
+                    <div class="meritItem">
+                        <img src="images/meritItem02.png" alt="メガホン">
+                        <h4>各協同組合の周知</h4>
+                        <p id="meritP"><br>経営セミナーやスキルアップ講習会など開業に必要な知識を学べます</p>
+                    </div><!-- meritItem -->
+                    <div class="meritItem">
+                        <img src="images/meritItem03.png" alt="お金">
+                        <h4>金融制度の紹介</h4>
+                        <p id="meritP"><br>難しい書類仕事の代行や効率化のサポートにより施術に集中できる環境を整えます。</p>
+                    </div><!-- meritItem -->
+                </div><!-- meritWrap -->
+
+            </div><!-- meritBox -->
+
+            <div class="generalLink">
+                <h3>各組合へのリンク</h3>
+
+                <div class="genLinBox">
+                    <a href="#" class="generalLinkItem">兵庫</a>
+                    <a href="#" class="generalLinkItem">京都</a>
+                    <a href="#" class="generalLinkItem">奈良</a>
+                    <a href="#" class="generalLinkItem">滋賀</a>
+                    <a href="#" class="generalLinkItem">和歌山</a>
+                </div><!-- genLinBox -->
+            </div><!-- generalLink -->
+
+        </div><!-- mainContent -->
+
+        <footer>
+            <div class="footerWrapper">
+                <div class="footerLink">
+                    <nav>
+                        <ul>
+                            <li><a href="">兵庫県のかたはこちら<span class="tume">>></span></a></li>
+                            <li><a href="">滋賀県のかたはこちら<span class="tume">>></span></a></li>
+                            <li><a href="">京都府のかたはこちら<span class="tume">>></span></a></li>
+                            <li><a href="">奈良県のかたはこちら<span class="tume">>></span></a></li>
+                            <li><a href="">和歌山県のかたはこちら<span class="tume">>></span></a></li>
+                        </ul><!-- モバイル版でもう少し行間開ける -->
+                    </nav>
+                </div>
+
+                <div class="adress">
+                    <h4>リカレント柔道整復師連合会</h4>
+                    <address class="juusyo">〒XXX-XXXX
+                        <br> XX市XX区XX町X丁目X番XX号
+                    </address>
+                    <address class="tell">Tel:012-345-6789
+                        <br>Fax:012-345-6789
+                        <br>Email: info@XXX.com<!-- aタグでリンク貼る paddingで右に隙間-->
+                    </address>
+                </div>
+            </div><!-- footerWrapper -->
+            <small>&copy;2024リカレント柔道整復師連合会</small>
+
+            <!-- !!!!モバイル版も作る!!!! -->
+            <!-- モバイル版でpadding外す -->
+        </footer>
+    </div><!-- gradient -->
+
+    <script src="js/accordion.js"></script><!-- アコーディオンメニュー -->
+
+</body>
+
+</html>

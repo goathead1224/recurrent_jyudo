@@ -1,0 +1,452 @@
+
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.gradient {
+    background: rgb(252, 253, 254);
+    background: linear-gradient(90deg, rgba(252, 253, 254, 1) 0%, rgba(202, 231, 255, 1) 100%);
+}
+
+// トップ画面
+
+.swiper-slide::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 39%);
+}
+
+
+section .mainTop h1 {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    font-size: 64px;
+    z-index: 100;
+    max-width: 1500%;
+    z-index: 10;
+}
+
+section .mainTop .arrow {
+    display: none;
+}
+
+
+/* スライダー画像幅調整 */
+.mainTop .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+
+// 各県リンク
+.topLink nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    margin: 0 auto;
+    max-width: 15025px;
+}
+
+.topLink ul li {
+    background-color: #FFD24C;
+    width: 15.6%;
+    text-align: center;
+    padding: 1%;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3)
+}
+
+// 組合について
+
+.topSalutation {
+    width: 87%;
+    height: 95%;
+    margin: 0 auto;
+    // opacity: 0;
+}
+
+.topSalutationWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+main .topSalutationWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    background-color: rgb(146, 180, 236, 37%);
+}
+
+main .topSalutationWrap h2 {
+    padding: 1rem;
+}
+
+main .topSalutationWrap p {
+    width: 100%;
+    padding: 1rem;
+}
+
+main .topSalutation ul {
+    text-align: center;
+    display: block;
+    background-color: var(--Btn);
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3)
+}
+
+main .topSalutation ul li a{
+    display: block;
+    padding: 1.3rem;
+    // color: var(--whiteFontColor);
+    color: black;
+}
+
+
+
+
+// 指定業者申込
+
+.topVendor {
+    width: 87%;
+    height: 95%;
+    margin: 0 auto;
+    // opacity: 0;
+}
+
+.topVendorimg {
+    position: relative;
+    width: 60%;
+}
+
+.topVendorimg img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+
+
+.topVendorimg::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 39%);
+}
+
+main .topVendorWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.topVendorWrapper2 {
+    display: none;
+}
+
+main .topVendortext {
+    background-color: #FFFAFA;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+main .topVendortext h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+main .topVendortext a {
+    text-align: center;
+    padding: 6%;
+    margin-top: 3rem;
+    background-color: var(--Btn);
+    color: var(black);
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3)
+}
+
+// 入会案内
+
+.topJoin {
+    width: 87%;
+    height: 95%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    // opacity: 0;
+}
+
+main .topJoinWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+main .topJoinWrapper2 {
+    display: none;
+}
+
+main .topJointext {
+    background-color: #FFFAFA;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+}
+
+
+main .topJointext h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+main .topJointext a {
+    text-align: center;
+    padding: 6%;
+    margin-top: 3rem;
+    background-color: var(--Btn);
+    color: black;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3)
+}
+
+main .topJoinimg {
+    position: relative;
+    width: 60%;
+}
+
+.topJoinimg img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.topJoinimg::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 39%);
+}
+
+/* Swiper */
+.swiper {
+    /* width: 600px;
+    height: 300px; */
+    width: auto;
+    height: 100vh;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1060px) {
+    .topSalutationWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+main .topSalutationWrap{
+    width: 100%;
+}
+
+    main .topSalutation ul{
+        margin: 2rem 0 2rem 0;
+    }
+
+    main .topVendorWrapper{
+    display: block;
+    }
+    
+    .topVendorimg{
+        width: 100%;
+        margin: 2rem 0 2rem 0
+    }
+
+
+    main .topVendortext a {
+        text-align: center;
+        padding: 3%;
+        margin-top: 3rem;
+        box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3)
+    }
+
+    main .topJoinWrapper {
+flex-direction: column-reverse;
+    }
+
+    main .topJoinimg {
+        width: 100%;
+    }
+
+    main .topJointext a {
+        text-align: center;
+        padding: 3%;
+        margin-top: 3rem;
+        box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3)
+    }
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    img {
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    section .mainTop {
+        background-position-x: 65%;
+        position: relative;
+    }
+
+    section .mainTop .arrow {
+        display: block;
+        position: absolute;
+        width: 12%;
+        top: 66%;
+        left: 43%;
+        z-index: 99;
+    }
+
+    section .mainTop h1 {
+        position: absolute;
+        top: 40%;
+        font-size: 32px;
+        left: 1%;
+    }
+
+    .topLink nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+
+    .topLink nav ul li {
+        width: 30%;
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .topSalutationWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    // main .topSalutationWrap {
+    //     width: 50%;
+    //     min-width: 350px;
+    // }
+
+    main .topSalutationWrap ul {
+        width: 50%;
+        margin-top: 0;
+    }
+
+    main .topVendorWrapper {
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    div .topVendorWrapper {
+        display: none;
+    }
+
+    div .topVendorWrapper2 {
+        display: block;
+        position: relative;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    // .topVendorWrapper2:before {
+    //     position: absolute;
+    //     content: '';
+    //     left: 0;
+    //     top: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-color: rgb(255, 255, 255, 39%);
+    // }
+
+
+    div .topVendorWrapper2 h2 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+
+
+
+    div .topVendorWrapper2 img {
+        width: 450px;
+        height: 120px;
+        object-fit: cover;
+        filter: brightness(61%);
+    }
+
+    section .topJoinWrapper {
+        display: none;
+    }
+
+    section .topJoinWrapper2 {
+        display: block;
+        position: relative;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+
+    div .topJoinWrapper2 h2 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+
+    div .topJoinWrapper2 img {
+        width: 450px;
+        height: 120px;
+        object-fit: cover;
+        filter: brightness(61%);
+    }
+
+
+
+}

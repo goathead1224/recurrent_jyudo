@@ -1,0 +1,122 @@
+
+:root {
+    /* --backgroundColor: #ffffff; */
+    /* グラデーションか画像 */
+    /* background-color: var(--primary-color); */
+    --fontColor: #2b2b2b;
+    /* フォントカラー */
+    --whiteFontColor: #ffffff;
+    /* フォントカラー */
+    --TopBtn: #FFD24C;
+    /* トップページボタン QAボタン QA線*/
+    --backgroundColorPoint: #92B4EC;
+    /* opacity: 39%; コンテンツ背景*/
+    --HeaderFooterColor: #759AD9;
+    /* ヘッダーフッター背景色 */
+    --FontBlue: #0019FF;
+    /* 文字色青 */
+    --Btn: #FBAD36;
+    /* 各都道府県ボタンカラー */
+    --Opa: rgba(0, 0, 0, 0.39);
+    /* メインビジュアル不透明度 */
+}
+
+body{
+    font-family: 'Zen Antique Soft', serif;
+}
+
+.title {
+    font-weight: 700;
+}
+
+h1 {
+    /* ヘッダタイトル */
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 4px#00000048;
+}
+
+/* ヘッダ*/
+header {
+    background-color: var(--HeaderFooterColor);
+}
+
+
+h1 {
+    padding-top: 1rem;
+}
+
+
+
+.headerList ul{
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
+    margin: 1rem;
+}
+
+
+.headerWrapper{
+    background-color: var(--HeaderFooterColor);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.headerWrap{
+    max-width: 1525px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+// ここからフッター
+
+footer{
+    background-color: var(--HeaderFooterColor);
+    color: var(--whiteFontColor);
+    letter-spacing: 0.3rem;// 仮数値
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    margin-top: 12rem;
+}
+
+.footerWrapper{
+    display: flex;/* モバイル版で縦並び */
+    justify-content: end;/* モバイルでcenter */
+    gap: 2rem;
+    max-width: 1525px;
+    margin: 0 auto;
+}
+
+.footerLink{
+    line-height: 1.7;
+}
+
+.adress h4{
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.juusyo{
+    padding-bottom: 1rem;
+}
+
+.tume{
+    letter-spacing: -0.35rem;
+}
+
+small{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 10px;
+}
+
+.tell{
+    padding: 0 1rem 0 0 ;
+}

@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/* h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+    padding: 8px 16px;
+    margin-bottom: 1rem;
+}
+dl div{
+    margin-bottom: 1rem;
+}
+dt, dd{
+    padding: 0.3rem;
+} */
+
+
+dt{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+dt::before{
+    content: "Q";
+    background-color: #92B4EC;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*     padding: 2rem;
+    margin: 2rem 0; */
+}
+
+dt::after{
+    content: "+";
+    // position: absolute;
+    // top: 8px;
+    // right: 16px;
+    transition: transform .3s;
+}
+
+dd::before{
+    content: "A";
+    background-color: #FFDE31;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*     padding: 2rem 0 2rem 5rem;
+    margin: 2rem 0; */
+}
+
+dt{
+    /* cursor: pointer; */
+    user-select: none;
+}
+
+dd{
+    display: none;
+}
+
+dl div.appear dt::after{
+    transform: rotate(45deg);
+}
+
+dl div.appear dd{
+    display: block;
+    animation: .3s fadeIn;
+    display: flex;
+    align-items: center;
+}
+
+
+/* アニメーションの設定▼▼▼ */
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* QA四角形小さく */
+@media (max-width:500px){
+    dd::before{
+        width: 40px;
+        height: 40px;
+    }
+    dt::before{
+        width: 40px;
+        height: 40px;
+    }
+}

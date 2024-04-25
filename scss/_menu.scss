@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+.headerWrap{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	// text-align: center;
+	text-decoration: none;
+	// font-family: "Nunito Sans", sans-serif;
+}
+
+/*-----------ここからハンバーガーメニューの記述----------------*/
+
+label{
+    position: absolute;
+    top:10px;
+    right:10px;
+    width:40px;
+    height:40px;
+    display:block;
+    background: #777;
+    border-radius:5px;
+	z-index: 100;
+    display: none;/* 追加 */
+}
+
+label span{
+    width: 60%;
+    height: 4px;
+    display: block;
+    position: absolute;
+    left: 20%;
+    background-color: #fff;
+    border-radius: 5px;
+	/*ハンバーガーメニュー変化アニメーション*/
+    transition: all 0.2s linear;
+}
+
+label span:nth-of-type(1){
+    top:10px;
+    transform: rotate(0);
+}
+label span:nth-of-type(2){
+    top: 18px;
+    transform: scale(1);
+}
+label span:nth-of-type(3){
+    bottom: 10px;
+    transform: rotate(0);
+}
+
+#open:checked+label span:nth-of-type(1){
+    top:18px;
+    transform: rotate(-45deg);
+}
+#open:checked+label span:nth-of-type(2){
+    transform: scale(0);
+}
+#open:checked+label span:nth-of-type(3){
+    bottom:18px;
+    transform: rotate(45deg);
+}
+
+#menu{
+    position: fixed;
+    top:0;
+    right:-240px;
+    overflow:hidden;
+    width: 200px;
+    height: 100%;
+    padding:20px;
+    transition: left .5s,right .5s;
+    background-color: #759ad9bc;
+    display: none;/* 追加 */
+}
+#menu nav ul{
+    margin: 0;
+	padding-top: 60px;
+    padding-left:0;
+}
+#menu nav ul li{
+    list-style: none;
+	padding: 10px;
+    // color: var(--fontColor);
+    // color: white;
+}
+#menu nav ul li .menuText{
+    text-decoration: none;
+    color: white;
+    filter: drop-shadow(1px 1px 1px black);
+}
+.toggle{
+    font-size:30px;
+    cursor:pointer;
+}
+.toggle:hover{
+    text-decoration: underline;
+}
+#open{
+    display:none;
+}
+#open:checked~#menu{
+    right: 0;
+}
+
+
+.humMenuButton{
+    text-align: center;
+    background-color: #FFD24C;
+    padding: 0.5rem;
+    border-radius: 5px;
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+
+/*-----------ここからハンバーガーメニューの記述----------------*/
+@media (max-width:500px){
+    label{
+        display: block;/* 追加 */
+    }
+    #menu{
+        display: block;/* 追加 */
+    }
+}

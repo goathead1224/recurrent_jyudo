@@ -1,0 +1,206 @@
+@media (max-width: 500px) {
+
+    img {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding-left: 4%;
+        padding-bottom: 1rem;
+    }
+
+    h4{
+        font-size: 20px;
+        padding-bottom: 0.7rem;
+    }
+
+/*     .headerList {
+        display: none;
+    } */
+
+    // .mainContent {
+    //     width: 96%;
+    // }
+
+    // ここからgreetページCSS
+
+    .greMidasi {
+        height: 50vh;
+    }
+
+    .greMidasiP {
+        width: 55%;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .greMidasiP h2 {
+        font-size: 32px;
+    }
+
+    .greMidasiP h3 {
+        font-size: 16px;
+    }
+
+    .kaisetu {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .kaisetu h3 {
+        margin-bottom: 20px;
+    }
+
+    .aisatu {
+        padding: 1rem;
+        margin-bottom: 80px;
+        letter-spacing: 1px;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .aisatu h3 {
+        margin-bottom: 20px;
+    }
+
+    .itemWrapper {
+        flex-direction: column;
+    }
+
+    .greetLink {
+        margin-bottom: 40px;
+    }
+
+    .greetLink h3 {
+        margin-bottom: 20px;
+    }
+
+    .greetLinkItem p {
+        font-size: 20px;
+    }
+
+    .greetLinkItem a {
+        font-size: 16px;
+    }
+
+    .greetBtn {
+        width: 40%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin: 3% 2.5% 8% 2.5%;
+    }
+
+    // ここからgeneralページのCSS
+
+    .genMidashi {
+        height: 50vh;
+    }
+
+    .genMidashiP {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .genMidashiP h2 {
+        font-size: 32px;
+    }
+
+    .genMidashiP h3 {
+        font-size: 16px;
+    }
+
+    .negBox{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .negBox p {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .negItem {
+        flex-direction: column;
+    }
+
+    .negItem p {
+        width: 96%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .genSpo {
+        margin-top: 20px;
+    }
+
+    .genSpo img {
+        width: 96%;
+    }
+
+    .meritBox{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .meritBox h3 {
+        margin-top: 80px;
+    }
+
+    .meritWrap {
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+
+    .meritItem {
+        width: 96%;
+        padding-bottom: 1rem;
+    }
+
+    .generalLink{
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 60px;
+    }
+
+    .generalLink h3 {
+        margin: 20px;
+    }
+
+    .genLinBox {
+        justify-content: center;
+        gap: 1rem;
+        // flex-direction: column;
+        // align-items: center;
+    }
+
+    .generalLinkItem {
+        width: 30%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .item p{
+        font-size: 1.3rem;
+    }
+
+    // ここからフッター
+
+    .footerWrapper {
+        justify-content: center;
+        /* モバイルでcenter */
+        flex-direction: column;
+        /* モバイル */
+        align-items: flex-start;
+        /* モバイル */
+        padding: 2rem;
+        /* モバイル */
+    }
+}

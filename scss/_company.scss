@@ -1,0 +1,285 @@
+@charset "utf8";
+
+// img{
+//     width: 100%;
+//     height: 100%;
+// }
+.conpanyWrapper h2{
+    font-size: 64px;
+    min-width: 350px;
+}
+.conpanyWrapper h3{
+    font-size: 32px;
+}
+
+.companyContact{
+    display: none;
+    color: var(--fontColor);
+    text-align: center;
+}
+.companyContact p{
+    width: 15em;
+    height: 3rem;
+    background-color: var(--Btn);
+    box-shadow: 5px 5px 4px rgba(0,0,0,0.15);
+    border-radius: 5px;
+}
+.companyContact p a{
+/*     display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+// .conpanyWrapper{
+//     background: rgb(252,253,254);
+//     background: linear-gradient(90deg, rgba(252,253,254,0.5) 0%, rgba(202,231,255,1) 100%);
+//     min-width: 350px;
+// }
+.conpanyWrapper .conpanyVisual{
+    // height: 100vh;
+    max-width: 100%;
+    position: relative;
+}
+
+.conpanyWrapper .conpanyVisual img{
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
+}
+
+.conpanyWrapper .conpanyVisual:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Opa);
+}
+.conpanyWrapper .companyVisual_txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -25%);
+    color: var(--whiteFontColor);
+    text-align: center;
+}
+.conpanyWrapper .companyVisual_txt p{
+    font-size: 32px;
+}
+
+
+.conpanyWrapper .company_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+        // 調整
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.conpanyWrapper .company_wrapper .gonannai{
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 3.2rem;
+}
+.conpanyWrapper .company_wrapper .gonannai h3{
+    text-align: center;
+    padding-bottom: 2.4rem;
+}
+
+.conpanyWrapper .company_wrapper .gonannai p{
+    text-align: center;
+}
+
+.conpanyWrapper .company_wrapper .gonannai .shiteigyousya{
+    color:var(--FontBlue);
+}
+.conpanyWrapper .company_wrapper .advantages{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.conpanyWrapper .company_wrapper .advantages .senden{
+    color: var(--FontBlue);
+}
+.conpanyWrapper .wrapper .advantages .advFlex{
+    display: flex;
+    gap: 5rem;
+}
+.conpanyWrapper .wrapper .shinsei{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+.conpanyWrapper .wrapper .shinsei h3{
+    margin-bottom: 1em;
+}
+.conpanyWrapper .wrapper .shinsei p{
+    width: 55%;
+    margin: 0 auto;
+}
+
+.conpanyWrapper .wrapper .kumiaiLink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conpanyWrapper .wrapper .kumiaiLink .link_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem;
+}
+/* .conpanyWrapper .wrapper .kumiaiLink .link_flex ul{
+    min-width:350px;
+} */
+
+.conpanyWrapper .wrapper .kumiaiLink .link_flex li{
+    width: 8.5em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--Btn);
+    box-shadow: 5px 5px 4px rgba(0,0,0,0.15);
+    color: var(--whiteFontColor);
+    font-size: 32px;
+}
+.conpanyWrapper .wrapper .kumiaiLink .link_flex li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ここからQA */
+.conpanyWrapper .wrapper .shiteiQA{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    // margin-bottom: 12rem;
+}
+.conpanyWrapper .wrapper .shiteiQA div{
+    margin-bottom: 3rem;
+    border-bottom:solid  var(--TopBtn);
+    border-bottom-width: 2px;
+}
+
+.conpanyWrapper .wrapper .shiteiQA dl{
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.conpanyWrapper .wrapper .shiteiQA dd,
+.conpanyWrapper .wrapper .shiteiQA dt{
+    font-size: 24px;
+    margin-bottom: 2.5rem;
+}
+
+.conpanyWrapper .wrapper .shiteiQA .answer,
+.conpanyWrapper .wrapper .shiteiQA .question{
+    width: 80%;
+    padding-left: 2rem;
+}
+
+// ここから流れの追加
+#responsive{
+    display: none;
+}
+
+
+/* ここまでQA */
+
+/* min */
+/* h1{
+    min-width: 350px;
+}
+.conpanyWrapper h2{
+    font-size: 64px;
+    min-width: 350px;
+}
+header .headerList{
+    min-width: 350px;
+}
+main{
+    min-width: 350px;
+} */
+footer{
+    min-width: 350px;
+}
+
+
+
+@media (max-width:500px){
+    .companyContact{
+        display: block;
+    }
+
+    .conpanyWrapper h2{
+        font-size: 32px;
+    }
+
+    .conpanyWrapper .company_wrapper{
+        gap: 5rem;
+    }
+
+    .conpanyWrapper .conpanyVisual{
+        height: 50vh;
+    }
+
+    .conpanyWrapper .conpanyVisual img{
+        height: 50vh;
+    }
+
+    .conpanyWrapper .companyVisual_txt{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform:translate(-50%, -25%);
+        color: var(--whiteFontColor);
+        text-align: center;
+    }
+    .conpanyWrapper .companyVisual_txt p{
+        font-size: 16px;
+    }
+    .conpanyWrapper h3{
+        font-size: 24px;
+    }
+    .conpanyWrapper .wrapper .advantages .advFlex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .conpanyWrapper .wrapper .shinsei p{
+        width: 90%;
+    }
+    .conpanyWrapper .wrapper .shiteiQA dd,
+    .conpanyWrapper .wrapper .shiteiQA dt{
+        font-size: 12px;
+/*         width: 80%;
+        padding: 1rem; */
+    }
+
+
+    // ここから追加
+
+#pcVis{
+    display: none;
+}
+
+    #responsive{
+        display: flex;
+    }
+
+}/* max-width:500px */

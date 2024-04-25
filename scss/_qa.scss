@@ -1,0 +1,127 @@
+img {
+    max-width: 100%;
+}
+
+.gradient {
+    background: rgb(252,253,254);
+    background: linear-gradient(90deg, rgba(252,253,254,1) 0%, rgba(202,231,255,1) 100%);
+}
+
+
+.backgroundImage {
+    background-image: url(../images/heroViewQa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(61%);
+    position: relative;
+}
+
+.qaTitleTexit {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.qaTitleTexit h2 {
+    font-weight: 700;
+    font-size: 64px;
+    color: white;
+}
+
+.qaTitleTexit p {
+    font-size: 32px;
+    color: white;
+}
+
+
+.qaWrapper {
+    max-width: 1525px;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+
+
+/* ここからQA */
+.shiteiQA{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-inline: auto;
+    margin-bottom: 6rem;
+}
+.shiteiQA div{
+    margin-bottom: 3rem;
+    border-bottom:solid  #FFD24C;
+    border-bottom-width: 2px;
+}
+
+.shiteiQA dl{
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.shiteiQA dd,
+.shiteiQA dt{
+    font-size: 24px;
+    margin-bottom: 2.5rem;
+}
+
+
+.shiteiQA .answer,
+.shiteiQA .question{
+    width: 80%;
+    padding-left: 2rem;
+}
+/* ここまでQA */
+
+
+// ここから下はButtonエリア
+
+.qaFooter {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.item {
+    position: relative;
+    filter: drop-shadow(1px 1px 2px black);
+}
+
+.item img {
+    width: 450px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.descriptionImage {
+    filter: brightness(61%);
+}
+
+.participationImage {
+    filter: brightness(61%);
+}
+
+.toCompanyImage {
+    filter: brightness(61%);
+}
+
+.item p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.7rem;
+}

@@ -1,0 +1,167 @@
+:root {
+    /* --backgroundColor: #ffffff; */
+    /* グラデーションか画像 */
+    /* background-color: var(--primary-color); */
+    --fontColor: #2b2b2b;
+    /* フォントカラー */
+    --whiteFontColor: #ffffff;
+    /* フォントカラー */
+    --TopBtn: #FFD24C;
+    /* トップページボタン QAボタン QA線*/
+    --backgroundColorPoint: #92B4EC;
+    /* opacity: 39%; コンテンツ背景*/
+    --HeaderFooterColor: #759AD9;
+    /* ヘッダーフッター背景色 */
+    --FontBlue: #0019FF;
+    /* 文字色青 */
+    --Btn: #FBAD36;
+    /* 各都道府県ボタンカラー */
+    --Opa: rgba(0, 0, 0, 0.39);
+    /* メインビジュアル不透明度 */
+}
+
+body{
+    font-family: 'Zen Antique Soft', serif;
+}
+
+.genMidashiP h2{
+    font-size: 4rem;
+}
+
+.genMidashiP h3{
+    font-size: 2rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+.genMidashi{
+    text-align: center;
+    background-image: url(../images/generalMain.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    filter: brightness(61%);
+    position: relative;
+}
+
+.genMidashiP{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--whiteFontColor);
+    text-align: center;
+}
+
+// ここからgeneralのCSS
+
+.mainContentGeneral{
+    max-width: 1525px;
+    margin: 0 auto;
+}
+
+.negBox{
+    color: var(--fontColor);
+}
+
+.negBox p{
+    text-align: center;
+    margin-top: 7.5rem;
+    margin-bottom: 3rem;
+}
+
+.negaQuestion{
+    font-size: 1.3rem;
+
+}
+
+.negItem{
+    display: flex;
+    justify-content: center;
+}
+
+.negItem :nth-child(2){
+    align-self: center;
+}
+
+.negItem img{
+    margin-top: 3rem;
+}
+
+.negItem p{
+    width: 40%;
+}
+
+.genSpo{
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+.genSpo img{
+    width: 70%;
+}
+
+.meritBox{
+    color: var(--fontColor);
+}
+
+.meritBox h3{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.meritWrap{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.meritItem{
+    width: 30%;
+    text-align: center;
+}
+
+.meritWrap :nth-child(2){
+    padding-top: 2rem;
+}
+
+.meritWrap :nth-child(2) img{
+    padding-bottom: 1rem;
+}
+
+#meritP{
+    font-size: 14px;
+}
+
+.generalLink{
+    color: var(--fontColor);
+}
+
+.generalLink h3{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.genLinBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.generalLinkItem{
+    background-color: var(--Btn);
+    width: 25%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--whiteFontColor);
+    font-size: 2rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
